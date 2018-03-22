@@ -1,0 +1,1133 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <customproperties/>
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="Særlige Lag">
+      <customproperties/>
+      <layer-tree-group expanded="1" checked="Qt::Checked" name="Global Background">
+        <customproperties/>
+        <layer-tree-layer id="wathercolour__adc3eeb7_0edd_4241_904b_cbd0f1df1b4f" source="type=xyz&amp;url=http://c.tile.stamen.com/watercolor/%7Bz%7D/%7Bx%7D/%7By%7D.jpg&amp;zmax=18&amp;zmin=0" providerKey="wms" expanded="1" checked="Qt::Checked" name="wathercolour ">
+          <customproperties/>
+        </layer-tree-layer>
+      </layer-tree-group>
+      <layer-tree-group expanded="0" checked="Qt::Checked" name="Plansystemet">
+        <customproperties/>
+        <layer-tree-layer id="pdk_kommuneplanramme_37ff89fb_a222_4e9e_201803221312414662530" source=" restrictToRequestBBOX='1' srsname='EPSG:25832' typename='pdk:kommuneplanramme' url='http://geoservice.plansystem.dk/wfs?version=1.1.0' version='auto' table=&quot;&quot; sql=" providerKey="WFS" expanded="1" checked="Qt::Checked" name="pdk:kommuneplanramme">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer id="pdk_zonekort_6194a2c5_d005_45a6_201803221312414662761" source=" restrictToRequestBBOX='1' srsname='EPSG:25832' typename='pdk:zonekort' url='http://geoservice.plansystem.dk/wfs?version=1.1.0' version='auto' table=&quot;&quot; sql=" providerKey="WFS" expanded="1" checked="Qt::Checked" name="pdk:zonekort">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer id="region_regionplaner_55369705_6fba_4c5d_20180322131241466255" source=" restrictToRequestBBOX='1' srsname='EPSG:25832' typename='region:regionplaner' url='http://geoservice.plansystem.dk/wfs?version=1.1.0' version='auto' table=&quot;&quot; sql=" providerKey="WFS" expanded="1" checked="Qt::Checked" name="region:regionplaner">
+          <customproperties/>
+        </layer-tree-layer>
+      </layer-tree-group>
+    </layer-tree-group>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer type="raster" autoRefreshEnabled="0" hasScaleBasedVisibilityFlag="0" minScale="1e+8" refreshOnNotifyEnabled="0" maxScale="0" refreshOnNotifyMessage="" autoRefreshTime="0">
+      <extent>
+        <xmin>-20037508.34278924390673637</xmin>
+        <ymin>-20037508.34278925508260727</ymin>
+        <xmax>20037508.34278924390673637</xmax>
+        <ymax>20037508.34278924390673637</ymax>
+      </extent>
+      <id>wathercolour__adc3eeb7_0edd_4241_904b_cbd0f1df1b4f</id>
+      <datasource>type=xyz&amp;url=http://c.tile.stamen.com/watercolor/%7Bz%7D/%7Bx%7D/%7By%7D.jpg&amp;zmax=18&amp;zmin=0</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>wathercolour </layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+        <links/>
+      </resourceMetadata>
+      <customproperties>
+        <property value="Undefined" key="identify/format"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer type="singlebandcolordata" opacity="1" band="1" alphaBand="-1">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation saturation="0" colorizeRed="255" colorizeGreen="128" grayscaleMode="0" colorizeOn="0" colorizeStrength="100" colorizeBlue="128"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer type="vector" autoRefreshEnabled="0" labelsEnabled="0" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" minScale="1e+8" refreshOnNotifyEnabled="0" geometry="Polygon" simplifyDrawingTol="1" simplifyLocal="1" maxScale="0" refreshOnNotifyMessage="" simplifyDrawingHints="1" readOnly="0" autoRefreshTime="0" simplifyMaxScale="1">
+      <extent>
+        <xmin>443849.8299000000115484</xmin>
+        <ymin>6050939.39900000020861626</ymin>
+        <xmax>877974.04899999999906868</xmax>
+        <ymax>6399482.8837660001590848</ymax>
+      </extent>
+      <id>pdk_kommuneplanramme_37ff89fb_a222_4e9e_201803221312414662530</id>
+      <datasource> restrictToRequestBBOX='1' srsname='EPSG:25832' typename='pdk:kommuneplanramme' url='http://geoservice.plansystem.dk/wfs?version=1.1.0' version='auto' table="" sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>pdk:kommuneplanramme</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>2105</srsid>
+          <srid>25832</srid>
+          <authid>EPSG:25832</authid>
+          <description>ETRS89 / UTM zone 32N</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+        <links/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">WFS</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 type="singleSymbol" forceraster="0" enableorderby="0" symbollevels="0">
+        <symbols>
+          <symbol type="fill" alpha="1" name="0" clip_to_extent="1">
+            <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="91,122,162,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <fieldConfiguration>
+        <field name="planid">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="objektkode">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="komplan_id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="komtil_id">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="plantype">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="plannavn">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="plannr">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="distrikt">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="anvgen">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fzone">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="zone">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="anvspec">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="anvkonkret">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="datoforsl">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="datovedt">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="datoaflyst">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="datoikraft">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="datoattr">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="datogeom">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="bebygpct">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="bebygpctaf">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="bebygpctar">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="m3_m2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="maxetager">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="maxbygnhjd">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="minmiljo">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="maxmiljo">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="notanvgen">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="notomranv">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="notbebygom">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="notophold">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="notmiljo">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="notinfras">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="notzone">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="notlokalp">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="notat">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="dataprod">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="digigrundl">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="digigrundd">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="aktuel">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="datooprt">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="datoopdt">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="status">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="megawatt">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="planid" index="0" name=""/>
+        <alias field="objektkode" index="1" name=""/>
+        <alias field="komplan_id" index="2" name=""/>
+        <alias field="komtil_id" index="3" name=""/>
+        <alias field="plantype" index="4" name=""/>
+        <alias field="plannavn" index="5" name=""/>
+        <alias field="plannr" index="6" name=""/>
+        <alias field="distrikt" index="7" name=""/>
+        <alias field="anvgen" index="8" name=""/>
+        <alias field="fzone" index="9" name=""/>
+        <alias field="zone" index="10" name=""/>
+        <alias field="anvspec" index="11" name=""/>
+        <alias field="anvkonkret" index="12" name=""/>
+        <alias field="datoforsl" index="13" name=""/>
+        <alias field="datovedt" index="14" name=""/>
+        <alias field="datoaflyst" index="15" name=""/>
+        <alias field="datoikraft" index="16" name=""/>
+        <alias field="datoattr" index="17" name=""/>
+        <alias field="datogeom" index="18" name=""/>
+        <alias field="bebygpct" index="19" name=""/>
+        <alias field="bebygpctaf" index="20" name=""/>
+        <alias field="bebygpctar" index="21" name=""/>
+        <alias field="m3_m2" index="22" name=""/>
+        <alias field="maxetager" index="23" name=""/>
+        <alias field="maxbygnhjd" index="24" name=""/>
+        <alias field="minmiljo" index="25" name=""/>
+        <alias field="maxmiljo" index="26" name=""/>
+        <alias field="notanvgen" index="27" name=""/>
+        <alias field="notomranv" index="28" name=""/>
+        <alias field="notbebygom" index="29" name=""/>
+        <alias field="notophold" index="30" name=""/>
+        <alias field="notmiljo" index="31" name=""/>
+        <alias field="notinfras" index="32" name=""/>
+        <alias field="notzone" index="33" name=""/>
+        <alias field="notlokalp" index="34" name=""/>
+        <alias field="notat" index="35" name=""/>
+        <alias field="dataprod" index="36" name=""/>
+        <alias field="digigrundl" index="37" name=""/>
+        <alias field="digigrundd" index="38" name=""/>
+        <alias field="aktuel" index="39" name=""/>
+        <alias field="datooprt" index="40" name=""/>
+        <alias field="datoopdt" index="41" name=""/>
+        <alias field="status" index="42" name=""/>
+        <alias field="megawatt" index="43" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="planid" applyOnUpdate="0" expression=""/>
+        <default field="objektkode" applyOnUpdate="0" expression=""/>
+        <default field="komplan_id" applyOnUpdate="0" expression=""/>
+        <default field="komtil_id" applyOnUpdate="0" expression=""/>
+        <default field="plantype" applyOnUpdate="0" expression=""/>
+        <default field="plannavn" applyOnUpdate="0" expression=""/>
+        <default field="plannr" applyOnUpdate="0" expression=""/>
+        <default field="distrikt" applyOnUpdate="0" expression=""/>
+        <default field="anvgen" applyOnUpdate="0" expression=""/>
+        <default field="fzone" applyOnUpdate="0" expression=""/>
+        <default field="zone" applyOnUpdate="0" expression=""/>
+        <default field="anvspec" applyOnUpdate="0" expression=""/>
+        <default field="anvkonkret" applyOnUpdate="0" expression=""/>
+        <default field="datoforsl" applyOnUpdate="0" expression=""/>
+        <default field="datovedt" applyOnUpdate="0" expression=""/>
+        <default field="datoaflyst" applyOnUpdate="0" expression=""/>
+        <default field="datoikraft" applyOnUpdate="0" expression=""/>
+        <default field="datoattr" applyOnUpdate="0" expression=""/>
+        <default field="datogeom" applyOnUpdate="0" expression=""/>
+        <default field="bebygpct" applyOnUpdate="0" expression=""/>
+        <default field="bebygpctaf" applyOnUpdate="0" expression=""/>
+        <default field="bebygpctar" applyOnUpdate="0" expression=""/>
+        <default field="m3_m2" applyOnUpdate="0" expression=""/>
+        <default field="maxetager" applyOnUpdate="0" expression=""/>
+        <default field="maxbygnhjd" applyOnUpdate="0" expression=""/>
+        <default field="minmiljo" applyOnUpdate="0" expression=""/>
+        <default field="maxmiljo" applyOnUpdate="0" expression=""/>
+        <default field="notanvgen" applyOnUpdate="0" expression=""/>
+        <default field="notomranv" applyOnUpdate="0" expression=""/>
+        <default field="notbebygom" applyOnUpdate="0" expression=""/>
+        <default field="notophold" applyOnUpdate="0" expression=""/>
+        <default field="notmiljo" applyOnUpdate="0" expression=""/>
+        <default field="notinfras" applyOnUpdate="0" expression=""/>
+        <default field="notzone" applyOnUpdate="0" expression=""/>
+        <default field="notlokalp" applyOnUpdate="0" expression=""/>
+        <default field="notat" applyOnUpdate="0" expression=""/>
+        <default field="dataprod" applyOnUpdate="0" expression=""/>
+        <default field="digigrundl" applyOnUpdate="0" expression=""/>
+        <default field="digigrundd" applyOnUpdate="0" expression=""/>
+        <default field="aktuel" applyOnUpdate="0" expression=""/>
+        <default field="datooprt" applyOnUpdate="0" expression=""/>
+        <default field="datoopdt" applyOnUpdate="0" expression=""/>
+        <default field="status" applyOnUpdate="0" expression=""/>
+        <default field="megawatt" applyOnUpdate="0" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint field="planid" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="objektkode" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="komplan_id" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="komtil_id" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="plantype" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="plannavn" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="plannr" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="distrikt" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="anvgen" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="fzone" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="zone" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="anvspec" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="anvkonkret" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="datoforsl" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="datovedt" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="datoaflyst" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="datoikraft" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="datoattr" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="datogeom" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="bebygpct" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="bebygpctaf" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="bebygpctar" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="m3_m2" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="maxetager" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="maxbygnhjd" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="minmiljo" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="maxmiljo" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="notanvgen" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="notomranv" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="notbebygom" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="notophold" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="notmiljo" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="notinfras" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="notzone" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="notlokalp" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="notat" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="dataprod" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="digigrundl" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="digigrundd" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="aktuel" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="datooprt" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="datoopdt" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="status" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="megawatt" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="planid" desc="" exp=""/>
+        <constraint field="objektkode" desc="" exp=""/>
+        <constraint field="komplan_id" desc="" exp=""/>
+        <constraint field="komtil_id" desc="" exp=""/>
+        <constraint field="plantype" desc="" exp=""/>
+        <constraint field="plannavn" desc="" exp=""/>
+        <constraint field="plannr" desc="" exp=""/>
+        <constraint field="distrikt" desc="" exp=""/>
+        <constraint field="anvgen" desc="" exp=""/>
+        <constraint field="fzone" desc="" exp=""/>
+        <constraint field="zone" desc="" exp=""/>
+        <constraint field="anvspec" desc="" exp=""/>
+        <constraint field="anvkonkret" desc="" exp=""/>
+        <constraint field="datoforsl" desc="" exp=""/>
+        <constraint field="datovedt" desc="" exp=""/>
+        <constraint field="datoaflyst" desc="" exp=""/>
+        <constraint field="datoikraft" desc="" exp=""/>
+        <constraint field="datoattr" desc="" exp=""/>
+        <constraint field="datogeom" desc="" exp=""/>
+        <constraint field="bebygpct" desc="" exp=""/>
+        <constraint field="bebygpctaf" desc="" exp=""/>
+        <constraint field="bebygpctar" desc="" exp=""/>
+        <constraint field="m3_m2" desc="" exp=""/>
+        <constraint field="maxetager" desc="" exp=""/>
+        <constraint field="maxbygnhjd" desc="" exp=""/>
+        <constraint field="minmiljo" desc="" exp=""/>
+        <constraint field="maxmiljo" desc="" exp=""/>
+        <constraint field="notanvgen" desc="" exp=""/>
+        <constraint field="notomranv" desc="" exp=""/>
+        <constraint field="notbebygom" desc="" exp=""/>
+        <constraint field="notophold" desc="" exp=""/>
+        <constraint field="notmiljo" desc="" exp=""/>
+        <constraint field="notinfras" desc="" exp=""/>
+        <constraint field="notzone" desc="" exp=""/>
+        <constraint field="notlokalp" desc="" exp=""/>
+        <constraint field="notat" desc="" exp=""/>
+        <constraint field="dataprod" desc="" exp=""/>
+        <constraint field="digigrundl" desc="" exp=""/>
+        <constraint field="digigrundd" desc="" exp=""/>
+        <constraint field="aktuel" desc="" exp=""/>
+        <constraint field="datooprt" desc="" exp=""/>
+        <constraint field="datoopdt" desc="" exp=""/>
+        <constraint field="status" desc="" exp=""/>
+        <constraint field="megawatt" desc="" exp=""/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer type="vector" autoRefreshEnabled="0" labelsEnabled="0" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" minScale="1e+8" refreshOnNotifyEnabled="0" geometry="Polygon" simplifyDrawingTol="1" simplifyLocal="1" maxScale="0" refreshOnNotifyMessage="" simplifyDrawingHints="1" readOnly="0" autoRefreshTime="0" simplifyMaxScale="1">
+      <extent>
+        <xmin>441570.96199999999953434</xmin>
+        <ymin>6049784.03399999998509884</ymin>
+        <xmax>892078.09646999998949468</xmax>
+        <ymax>6400927.70967600028961897</ymax>
+      </extent>
+      <id>pdk_zonekort_6194a2c5_d005_45a6_201803221312414662761</id>
+      <datasource> restrictToRequestBBOX='1' srsname='EPSG:25832' typename='pdk:zonekort' url='http://geoservice.plansystem.dk/wfs?version=1.1.0' version='auto' table="" sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>pdk:zonekort</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>2105</srsid>
+          <srid>25832</srid>
+          <authid>EPSG:25832</authid>
+          <description>ETRS89 / UTM zone 32N</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+        <links/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">WFS</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 type="singleSymbol" forceraster="0" enableorderby="0" symbollevels="0">
+        <symbols>
+          <symbol type="fill" alpha="1" name="0" clip_to_extent="1">
+            <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="114,155,111,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <fieldConfiguration>
+        <field name="komnr">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="objektkode">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="zone">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="dataprod">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="datogeom">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="digigrundl">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="digigrundd">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="datooprt">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="datoopdt">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="glkomnr">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="komnr" index="0" name=""/>
+        <alias field="objektkode" index="1" name=""/>
+        <alias field="zone" index="2" name=""/>
+        <alias field="dataprod" index="3" name=""/>
+        <alias field="datogeom" index="4" name=""/>
+        <alias field="digigrundl" index="5" name=""/>
+        <alias field="digigrundd" index="6" name=""/>
+        <alias field="datooprt" index="7" name=""/>
+        <alias field="datoopdt" index="8" name=""/>
+        <alias field="glkomnr" index="9" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="komnr" applyOnUpdate="0" expression=""/>
+        <default field="objektkode" applyOnUpdate="0" expression=""/>
+        <default field="zone" applyOnUpdate="0" expression=""/>
+        <default field="dataprod" applyOnUpdate="0" expression=""/>
+        <default field="datogeom" applyOnUpdate="0" expression=""/>
+        <default field="digigrundl" applyOnUpdate="0" expression=""/>
+        <default field="digigrundd" applyOnUpdate="0" expression=""/>
+        <default field="datooprt" applyOnUpdate="0" expression=""/>
+        <default field="datoopdt" applyOnUpdate="0" expression=""/>
+        <default field="glkomnr" applyOnUpdate="0" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint field="komnr" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="objektkode" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="zone" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="dataprod" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="datogeom" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="digigrundl" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="digigrundd" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="datooprt" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="datoopdt" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="glkomnr" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="komnr" desc="" exp=""/>
+        <constraint field="objektkode" desc="" exp=""/>
+        <constraint field="zone" desc="" exp=""/>
+        <constraint field="dataprod" desc="" exp=""/>
+        <constraint field="datogeom" desc="" exp=""/>
+        <constraint field="digigrundl" desc="" exp=""/>
+        <constraint field="digigrundd" desc="" exp=""/>
+        <constraint field="datooprt" desc="" exp=""/>
+        <constraint field="datoopdt" desc="" exp=""/>
+        <constraint field="glkomnr" desc="" exp=""/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer type="vector" autoRefreshEnabled="0" labelsEnabled="0" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" minScale="1e+8" refreshOnNotifyEnabled="0" geometry="Polygon" simplifyDrawingTol="1" simplifyLocal="1" maxScale="0" refreshOnNotifyMessage="" simplifyDrawingHints="1" readOnly="0" autoRefreshTime="0" simplifyMaxScale="1">
+      <extent>
+        <xmin>441645.77000000001862645</xmin>
+        <ymin>6049789.53000000026077032</ymin>
+        <xmax>892799.9599999999627471</xmax>
+        <ymax>6402131.51999999955296516</ymax>
+      </extent>
+      <id>region_regionplaner_55369705_6fba_4c5d_20180322131241466255</id>
+      <datasource> restrictToRequestBBOX='1' srsname='EPSG:25832' typename='region:regionplaner' url='http://geoservice.plansystem.dk/wfs?version=1.1.0' version='auto' table="" sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>region:regionplaner</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>2105</srsid>
+          <srid>25832</srid>
+          <authid>EPSG:25832</authid>
+          <description>ETRS89 / UTM zone 32N</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+        <links/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">WFS</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 type="singleSymbol" forceraster="0" enableorderby="0" symbollevels="0">
+        <symbols>
+          <symbol type="fill" alpha="1" name="0" clip_to_extent="1">
+            <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="243,166,178,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <fieldConfiguration>
+        <field name="amtsnr">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="amtnavn">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="landsdel_n">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="dokumentna">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="doklink">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="amtsnr" index="0" name=""/>
+        <alias field="amtnavn" index="1" name=""/>
+        <alias field="landsdel_n" index="2" name=""/>
+        <alias field="dokumentna" index="3" name=""/>
+        <alias field="doklink" index="4" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="amtsnr" applyOnUpdate="0" expression=""/>
+        <default field="amtnavn" applyOnUpdate="0" expression=""/>
+        <default field="landsdel_n" applyOnUpdate="0" expression=""/>
+        <default field="dokumentna" applyOnUpdate="0" expression=""/>
+        <default field="doklink" applyOnUpdate="0" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint field="amtsnr" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="amtnavn" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="landsdel_n" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="dokumentna" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint field="doklink" unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="amtsnr" desc="" exp=""/>
+        <constraint field="amtnavn" desc="" exp=""/>
+        <constraint field="landsdel_n" desc="" exp=""/>
+        <constraint field="dokumentna" desc="" exp=""/>
+        <constraint field="doklink" desc="" exp=""/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </maplayers>
+</qlr>
