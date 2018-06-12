@@ -122,7 +122,7 @@ async function fetchData(){
     //d3.select("#statusInfo").text(displayText.fetchingPeriodData + period);
     //const periodArray = [period];
      try {
-        const dataset = await d3.json("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson");
+        const dataset = await d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson");
          d3.select("#status").node().innerHTML=""; //Clear wait status
          displayAggTypes();
 
