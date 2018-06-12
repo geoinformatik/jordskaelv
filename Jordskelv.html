@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title id="pageTitle"></title>
+
+		<script src="d3.js"></script>
+		<script
+				src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+				integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+				crossorigin="anonymous"></script>
+		<script src="bootstrap.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css">
+
+
+		<script src="crossfilter.js"></script>
+		<script src="dc.js"></script>
+		<link rel="stylesheet" href="css/dc.css">
+		<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+		<script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+		<link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+
+		<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/leaflet.markercluster.js'></script>
+		<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/MarkerCluster.css' rel='stylesheet' />
+		<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/MarkerCluster.Default.css' rel='stylesheet' />
+		<script src="js/leaflet-heat.js"></script>
+		<script src="https://unpkg.com/esri-leaflet@2.1.4"></script>
+
+	</head>
+
+	<body>
+
+	<div class='container' id='main-container'>
+		<div class='content'>
+			<div class='container' style='font: 12px sans-serif;'>
+
+				<div class='row'>
+					<div class='span12'>
+						<h3 id="title"></h3>
+						<div id ="status"></div>
+						<div id ="mapTypes"></div>
+						<div class='row'>
+							<div style="height: 500px;" class='pie-graph span6' id='map'>
+
+							</div>
+						</div>
+						<div class='row'>
+							<div class='pie-graph span6' id='dc-magnitude-chart'>
+								<h4>Efter størelse</h4>
+							</div>
+							<div class='pie-graph span6' id='dc-depth-chart'>
+								<h4>Efter dybde(km)</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class='row'>
+					<div class='span12' id='dc-time-chart'>
+						<h4>Efter dato</h4>
+					</div>
+				</div>
+
+				<div class='row'>
+					<div class='pie-graph span12'>
+						<table class='table table-hover' id='dc-table-graph'>
+							<thead>
+							<tr class='header'>
+								<th>Dato</th>
+								<th>Længdegrad</th>
+								<th>Brededegrad</th>
+								<th>Dybte</th>
+								<th>Størelse mb</th>
+							</tr>
+							</thead>
+						</table>
+					</div>
+				</div>
+
+
+					<p>Data fra <a href="https://earthquake.usgs.gov/earthquakes/">USGS</a>.</p>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="hentData.js"></script>
+
+
+	</body>
+
+
+</html>
